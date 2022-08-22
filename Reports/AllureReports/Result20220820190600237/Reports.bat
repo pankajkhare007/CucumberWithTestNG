@@ -1,0 +1,1 @@
+cmd /k allure serve C:\Users\pkhare\git\CucumberWithTestNG\Reports\AllureReports\Result20220820190600237
