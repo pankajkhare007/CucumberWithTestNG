@@ -19,7 +19,7 @@ public class NGListeners implements ITestListener, ISuiteListener, IInvokedMetho
 
     public  void onFinish(ISuite suite) {
 
-        ReportClass.moveallureresult();
+      //  ReportClass.moveallureresult();
     }
 
 
