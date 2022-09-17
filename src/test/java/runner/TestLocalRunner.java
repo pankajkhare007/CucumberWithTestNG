@@ -11,6 +11,7 @@ import org.testng.annotations.Listeners;
 @CucumberOptions(glue={"demo.stepDefinitions"},
         features = {"src/test/resources/Features"},
         plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
+        //tags = ("@Regression")
 
 )
 @Listeners(listeners.NGListeners.class)

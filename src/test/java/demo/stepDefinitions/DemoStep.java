@@ -18,9 +18,9 @@ public class DemoStep {
 
     }
     @Step("Step Enter username")
-    @Given("^Enter username$")
-    public void enter_username() throws Throwable {
-        System.out.println("Enter username");
+    @Given("^Enter username \"([^\"]*)\"$")
+    public void enter_username(String username) throws Throwable {
+        System.out.println(username);
 
     }
 
@@ -33,6 +33,12 @@ public class DemoStep {
     @And("^Verify validation message$")
     public void verifyValidationMessage() throws Throwable {
         Assertions.expectedTextsAreEqual("successful message","contact not added successfully","contact added successfully");
+
+    }
+
+    @And("^Enter Username")
+    public void enter_Username() throws Throwable {
+        System.out.println("Enter Username of Demo2");
 
     }
 
