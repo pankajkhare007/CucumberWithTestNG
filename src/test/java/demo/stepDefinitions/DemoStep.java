@@ -42,4 +42,10 @@ public class DemoStep {
 
     }
 
+    @And("Navigate to client detail page")
+    public void Navigatetoclientdetailpage()
+    {
+        System.out.println("Navigatetoclientdetailpage in demo2");
+    }
+
 }
